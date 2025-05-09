@@ -36,7 +36,20 @@
             <version>5.11.4</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-webapp-maven-plugin</artifactId>
+                <version>2.14.1</version>
+                <configuration>
+                    <schemaVersion>v2</schemaVersion>
+                    <resourceGroup>DevOpsSummative</resourceGroup>
+                    <appName>devops-summative</appName>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>   
 </project>
